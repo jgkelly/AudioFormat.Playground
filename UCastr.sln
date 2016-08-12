@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcast", "Source\Model\Pod
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{79F5640C-8BB1-4B88-91FA-130E2442DE20}"
 	ProjectSection(SolutionItems) = preProject
+<<<<<<< HEAD
+=======
+		Doc\1029_BlackLivesMatter_Air_Date_7-19-16_-_7-19-16_9.23_PM.mp3 = Doc\1029_BlackLivesMatter_Air_Date_7-19-16_-_7-19-16_9.23_PM.mp3
+		Doc\Coverville-160720.mp3 = Doc\Coverville-160720.mp3
+>>>>>>> fc8a62c02f8ad7cdf60a6a9fb57044eae9db60b3
 		Doc\Libraries.txt = Doc\Libraries.txt
 		Doc\mp3.rss = Doc\mp3.rss
 	EndProjectSection
