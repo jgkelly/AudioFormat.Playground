@@ -1,0 +1,8 @@
+MP4 Chapters library: 
+- Site: https://mp4chap.codeplex.com/
+- Nuget: https://www.nuget.org/packages/mp4chap/
+
+Podcasts that usually contain chapters: 
+- Coverville
+- Best of the Left
+- CBC Radio 3 Podcast
