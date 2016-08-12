@@ -1,0 +1,3 @@
+MP4 Chapters library: 
+- Site: https://mp4chap.codeplex.com/
+- Nuget: https://www.nuget.org/packages/mp4chap/
