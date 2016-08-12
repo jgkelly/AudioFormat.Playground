@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Podcast.Interfaces
 {
-    interface IFeed
+    /// <summary>
+    ///     Podcast feed description.
+    /// </summary>
+    public interface IFeed
     {
         string Title { get; }
         string Copyright { get; }
@@ -20,6 +19,5 @@ namespace Podcast.Interfaces
         int PlaybackSpeed { get; }
         List<string> Keywords { get; }
         List<string> Categories { get; }
-
     }
 }

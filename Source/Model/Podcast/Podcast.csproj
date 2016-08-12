@@ -49,6 +49,8 @@
     <Compile Include="Interfaces\IChapter.cs" />
     <Compile Include="Interfaces\IEpisode.cs" />
     <Compile Include="Interfaces\IFeed.cs" />
+    <Compile Include="Interfaces\ILibrary.cs" />
+    <Compile Include="Interfaces\IPlaylist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

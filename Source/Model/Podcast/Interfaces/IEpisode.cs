@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Podcast.Interfaces
 {
     /// <summary>
-    /// Represents a single podcast episode
+    ///     Represents a single podcast episode
     /// </summary>
     public interface IEpisode
     {
@@ -15,6 +15,8 @@ namespace Podcast.Interfaces
         string UniqueId { get; }
         string AlbumArt { get; }
         bool Explicit { get; }
+        bool Downloaded { get; }
+        bool Played { get; }
         DateTime Published { get; }
         TimeSpan Duration { get; }
         IList<string> Keywords { get; }

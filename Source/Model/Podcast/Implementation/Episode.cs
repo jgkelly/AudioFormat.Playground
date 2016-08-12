@@ -25,6 +25,8 @@ namespace Podcast.Implementation
         public string UniqueId { get; }
         public string AlbumArt { get; }
         public bool Explicit { get; }
+        public bool Downloaded { get; }
+        public bool Played { get; }
         public DateTime Published { get; }
         public TimeSpan Duration { get; }
         public IList<string> Keywords { get; }
