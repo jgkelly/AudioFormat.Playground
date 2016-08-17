@@ -1,11 +1,13 @@
-MP4 Chapters library: 
-- Site: https://mp4chap.codeplex.com/
-- Nuget: https://www.nuget.org/packages/mp4chap/
-<<<<<<< HEAD
+ID3V2 Chapters information: 
+http://id3.org/id3v2-chapters-1.0#sec3.2
+
+Libraries to look at: 
+UniversalID3Lib - Doesn't support chapters, but may be extensible to add Chapter frame
+taglib-sharp (https://github.com/timheuer/taglib-sharp-portable) - May support chapters - Need to research more
+
+You may need to roll your own on this one. 
 
 Podcasts that usually contain chapters: 
 - Coverville
 - Best of the Left
 - CBC Radio 3 Podcast
-=======
->>>>>>> fc8a62c02f8ad7cdf60a6a9fb57044eae9db60b3
