@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Podcast.Implementation;
 
 namespace Podcast.Interfaces
 {
@@ -20,6 +21,6 @@ namespace Podcast.Interfaces
         DateTime Published { get; }
         TimeSpan Duration { get; }
         IList<string> Keywords { get; }
-        IList<IChapter> Chapters { get; }
+        IList<Chapter> Chapters { get; }
     }
 }

@@ -15,7 +15,7 @@ namespace Podcast.Implementation
                 throw new ArgumentException("path Parameter can not be null or empty.");
             }
 
-            GetChapters(path);
+            FilePath = path;
         }
 
         public string Title { get; }
@@ -27,22 +27,28 @@ namespace Podcast.Implementation
         public bool Explicit { get; }
         public bool Downloaded { get; }
         public bool Played { get; }
+        public string FilePath { get; set; }
         public DateTime Published { get; }
         public TimeSpan Duration { get; }
         public IList<string> Keywords { get; }
-        public IList<IChapter> Chapters { get; private set; }
+        public IList<Chapter> Chapters { get { return GetChapters(); } }
 
-        private void GetChapters(string episode)
+        private IList<Chapter> GetChapters()
         {
-            using (var inputStream = File.OpenRead(episode))
+            var chapters = new List<Chapter>();
+
+            using (var inputStream = File.OpenRead(FilePath))
             {
                 var extractor = new ChapterExtractor(new StreamWrapper(inputStream));
                 extractor.Run();
-                foreach (ChapterInfo chapterInfo in extractor.Chapters)
+                foreach (var chapterInfo in extractor.Chapters ?? new ChapterInfo[0])
                 {
+                    chapters.Add(new Chapter(chapterInfo));
                     Console.WriteLine("{0} : {1}", chapterInfo.Time, chapterInfo.Name);
                 }
             }
+
+            return chapters;
         }
     }
 }
